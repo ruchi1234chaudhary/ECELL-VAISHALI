@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  :root {
+    --primary:rgb(22, 22, 24);
+    --secondery: #f9f6f6;
+    --accent: #f05938;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color:white;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 6rem 4rem;
+  }
+  
+  .faq-container {
+    display: flex;
+  }
+  
+  .faq-info {
+    width: 50%;
+  }
+  
+  h1 {
+    margin-bottom: 2rem;
+  }
+  
+  
+  
+  .faq-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background: var(--secondery);
+    color: var(--primary);
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  h3 {
+    opacity: 0.6;
+  }
+  
+  .faq-toggler {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent);
+    cursor: pointer;
+  }
+  
+  .faq-item-body {
+    padding: 0 1rem 1rem 1rem;
+    color: var(--primary);
+    opacity: 0.7;
+  }
+  
+  .faq-img {
+    width: 60%;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .faq-container {
+      flex-direction: column-reverse;
+    }
+  
+    .faq-img,
+    .faq-info {
+      width: 100%;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  }
